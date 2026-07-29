@@ -22,6 +22,8 @@ system update, shell, window manager, core utilities, GUI apps, networking,
 power management, then drops all dotfiles straight into `~/.config`.
 
 ```
+https://github.com/kusalthemiya/sway/
+cd sway
 chmod +x install.sh
 ./install.sh
 ```
