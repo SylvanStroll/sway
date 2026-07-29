@@ -1,0 +1,46 @@
+// -*- mode: jsonc -*-
+{
+    "height": 32,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "memory",
+        "clock"
+    ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+    "sway/window": {
+        "max-length": 50
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+    },
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-disconnected": "󰤭 disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+    "memory": {
+        "format": "󰍛 {used:0.1f}G",
+        "tooltip": false
+    },
+    "clock": {
+        "format": "󰃭  {:%d-%B | 󰥔  %H:%M}",
+        "tooltip": false
+    }
+}

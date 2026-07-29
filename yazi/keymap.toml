@@ -1,0 +1,13 @@
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[mgr.prepend_keymap]]
+on = ["Z"]
+run = 'shell "7z a \"$0.zip\" \"$0\"" --confirm'
+desc = "Zip selected folder with 7z"
+
+[[mgr.prepend_keymap]]
+on   = [ "U" ]
+run  = 'shell "7z x \"$1\" -o*" --confirm'
+desc = "Unzip/Extract here using 7z"

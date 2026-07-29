@@ -1,0 +1,23 @@
+[opener]
+edit = [
+    { run = 'nvim %s', desc = "Edit with nvim", block = true, for = "unix" },
+]
+image = [
+    { run = 'imv %s', desc = "Open with imv", orphan = true, for = "unix" },
+]
+play = [
+    { run = 'mpv %s', desc = "Play with mpv", orphan = true, for = "unix" },
+]
+open = [
+    { run = 'xdg-open %s', desc = "Open", orphan = true, for = "unix" },
+]
+
+[open]
+rules = [
+    { url = "*/", use = "open" },
+    { mime = "text/*", use = "edit" },
+    { mime = "image/*", use = "image" },
+    { mime = "video/*", use = "play" },
+    { mime = "audio/*", use = "play" },
+    { url = "*", use = "open" },
+]
