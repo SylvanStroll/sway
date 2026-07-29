@@ -7,7 +7,7 @@
 my personal sway setup — full install script + dotfiles, tuned for a calm,
 low-distraction desktop.
 
-![shell](https://img.shields.io/badge/shell-fish25-CBA6F7?style=for-the-badge&logo=gnubash&logoColor=1E1E2E)
+![shell](https://img.shields.io/badge/shell-fish-CBA6F7?style=for-the-badge&logo=gnubash&logoColor=1E1E2E)
 ![wm](https://img.shields.io/badge/wm-sway-B4BEFE?style=for-the-badge&logo=wayland&logoColor=1E1E2E)
 ![theme](https://img.shields.io/badge/theme-catppuccin-DDB6F2?style=for-the-badge)
 
